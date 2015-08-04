@@ -9,7 +9,14 @@ $(document).ready(function() {
 	$('.ryu').mousedown(function() {
 		$('.ryu-ready').hide();
 		$('.ryu-throwing').show();
-		$('.hadouken').show();
+		$('.hadouken').show().animate(
+			{'left': '1100px'},
+			500,
+			function() {
+				$(this).hide();
+				$(this).css('left', '600px');
+			}
+		)
 	}).mouseup(function() {
 		$('.ryu-throwing').hide();
 		$('.ryu-ready').show();
