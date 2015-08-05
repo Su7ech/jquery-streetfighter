@@ -61,10 +61,11 @@ body {
 	width: 500px;
 	padding-top: 80px;
 }
+.how-to {
+}
 .how-to h2 {
 	width: 50%;
 	font-size: 1.8em;
-
 }
 .how-to h2 + h2 {
 	margin-left: 275px;
