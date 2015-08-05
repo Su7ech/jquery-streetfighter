@@ -24,7 +24,7 @@ function playGame() {
 		)
 	}).mouseup(function() {
 		$('.ryu-action').hide();
-		$('.ryu-still').show();
+		$('.ryu-ready').show();
 	});
 	$(document).keydown(function(e) {
 		if ( e.keyCode == 88 ) {
@@ -43,4 +43,8 @@ function playHadouken () {
 	$('#hadouken-sound')[0].volume = 0.5;
 	$('#hadouken-sound')[0].load();
 	$('#hadouken-sound')[0].play();
+};
+
+function loadInstructions() {
+
 };
